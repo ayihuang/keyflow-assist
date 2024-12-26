@@ -7,7 +7,7 @@
     src:url(Pass_A38.woff2);
 }
 body {
-    background: #ffffff;
+    background: #ece7e7;
     color: rgb(0, 0, 0);
     font-family: Pass, Verdana, sans-serif;
     letter-spacing: 0px;
@@ -16,6 +16,15 @@ body {
     padding:0;
     height: 100vh;
     overflow-x: hidden;
+}
+h1{
+    color: black;
+    font-size: 60px;
+    padding-top: 100px;
+    margin-bottom: 0px;
+}
+h4{
+    padding: 50px;
 }
     /* Default link color */
 a{
@@ -104,6 +113,16 @@ a:visited {
     width:100%;
 }
 
+.title{
+    display: block;
+    text-align: center;
+}
+
+.intro-text{
+    display:block;
+    text-align: center;
+    background-color: #c2f0f3;
+}
 @media (max-width: 861px){
     .hideOnMobile{
         display: none;
