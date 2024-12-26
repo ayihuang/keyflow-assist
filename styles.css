@@ -1,0 +1,130 @@
+.html{
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+@font-face{
+    font-family: Pass;
+    src:url(Pass_A38.woff2);
+}
+body {
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    font-family: Pass, Verdana, sans-serif;
+    letter-spacing: 0px;
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    height: 100vh;
+    overflow-x: hidden;
+}
+    /* Default link color */
+a{
+    color: rgb(0, 0, 0); /* Change to your desired color */
+    text-decoration: none;   
+    font-size: 20px;
+}
+
+/* Visited link color */
+a:visited {
+    color: rgba(93, 2, 105, 0.11); /* Change to your desired color */
+
+}
+
+#skatelligenceLogoImg {
+    margin: 0px 0px 3px 10px;
+}
+
+/*display navigation horizontally accross top of screen*/
+.nav li {
+    display: inline-block;
+    align-items: center;
+    font-size: 14px;
+    margin-left: 0px; /* Adjust spacing as needed */   
+}
+.sidebar li{
+    margin-bottom: 60px;
+}
+
+.headNav a{
+    color: white;
+}
+.headNav a:visited{
+    color:rgb(38, 5, 43)
+}
+
+.nav a{
+    padding: 24px 15px 24px 15px;
+    height:100%;
+}
+
+.nav li :hover{
+    background-color:#c5c3cc
+}
+
+#header {
+    width: 100%;
+    margin: 0;
+    padding: 10px 0; /* Optional padding for content inside header */
+    box-sizing: border-box;
+    background-color: white;
+}
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0px;
+    color: rgb(0, 0, 0);
+    font-family: Verdana, sans-serif;
+    justify-content: flex-start;
+    box-shadow: -5px 0 5px rgba(0, 0, 0.1);
+    position: fixed;
+    z-index: 999;
+}
+.sidebar{
+    position: fixed;
+    top:0;
+    right:0;
+    height: 100vh;
+    width: 250px;
+    backdrop-filter: blur(10px);
+    z-index: 11;
+    background-color: rgba(43, 13, 78, 0.9);
+    box-shadow: -10px 0 10px rgba(0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li{
+    width:100%;
+}
+
+.sidebar a{
+    width:100%;
+}
+
+@media (max-width: 861px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+}
+@media (max-width: 400px){
+    .sidebar{
+        width: 100%;
+    }
+}
+
+@media (min-width: 862px){
+    .menu-button{
+        display: none;
+    }
+}
+
+.menu-button{
+    height: 100%;
+    transform: translateY(-4px);
+}
