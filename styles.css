@@ -88,8 +88,8 @@ a:visited {
     width: 250px;
     backdrop-filter: blur(10px);
     z-index: 11;
-    background-color: rgba(43, 13, 78, 0.9);
-    box-shadow: -10px 0 10px rgba(0, 0, 0.1);
+    background-color: rgba(201, 196, 207, 0.9);
+    box-shadow: -10px 0 10px rgb(129, 124, 124);
     display: none;
     flex-direction: column;
     align-items: flex-start;
