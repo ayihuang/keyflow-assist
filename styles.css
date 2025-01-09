@@ -1,51 +1,74 @@
 .html{
     overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
-@font-face{
-    font-family: Pass;
-    src:url(Pass_A38.woff2);
-}
+
 body {
-    background: #1b87ec;
+    background: rgb(47, 158, 248);
     color: rgb(0, 0, 0);
-    font-family: Pass, Verdana, sans-serif;
+    font-family: 'Courier New', monospace;
     letter-spacing: 0px;
     box-sizing: border-box;
     margin:0;
     padding:0;
     height: 100vh;
     overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+p{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding-left:5%;
+    padding-right: 5%;
 }
 h1{
-    color: black;
-    font-size: 60px;
-    padding-top: 100px;
-    margin-bottom: 0px;
+    font-size: 40px;
+    margin: 0;
+    text-align: center;
+    font-family: Verdana, sans-serif;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+#h1-title{
+    padding-bottom:0px;
+}
+h2{
+    margin-top: 0;
+    padding-top: 10px;
+    font-size:35px;
+    font-family: Verdana, sans-serif;
+    text-align: center;
+}
+h3{
+    text-align: left;
+    font-family: Verdana, sans-serif;
+    margin:0;
+    z-index: 999;
+    line-height: 1.5;
+    padding-left: 5%;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+#h3-title{
+    text-align: center;
+    padding: none;
+    margin: none;
 }
 h4{
-    padding: 50px;
-    line-height: 1.3;
-    margin-top: 0;
+    font-family: Verdana, sans-serif;
+    z-index: 9999;
+    line-height: 1.5;
+    margin: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 20px;
 }
-    /* Default link color */
 a{
-    color: rgb(0, 0, 0); /* Change to your desired color */
-    text-decoration: none;   
-    font-size: 20px;
+    text-decoration: none;
+    color:black;
 }
-
-/* Visited link color */
-a:visited {
-    color: rgba(93, 2, 105, 0.11); /* Change to your desired color */
-
-}
-
-#skatelligenceLogoImg {
-    margin: 0px 0px 3px 10px;
-}
-
-/*display navigation horizontally accross top of screen*/
 .nav li {
     display: inline-block;
     align-items: center;
@@ -54,24 +77,21 @@ a:visited {
 }
 .sidebar li{
     margin-bottom: 60px;
-    align-items: left;
 }
 
 .headNav a{
     color: white;
-    text-align: left;
 }
 .headNav a:visited{
-    color:rgb(38, 5, 43)
+    color:rgb(0, 0, 0)
 }
-
 .nav a{
     padding: 24px 15px 24px 15px;
     height:100%;
 }
 
 .nav li :hover{
-    background-color:#c5c3cc
+    background-color:rgb(40, 137, 216);
 }
 
 #header {
@@ -79,19 +99,19 @@ a:visited {
     margin: 0;
     padding: 10px 0; /* Optional padding for content inside header */
     box-sizing: border-box;
-    background-color: white;
+    background-color: rgb(47, 158, 248);
 }
 .navigation {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     padding: 0px;
-    color: rgb(0, 0, 0);
+    color: white;
     font-family: Verdana, sans-serif;
     justify-content: flex-start;
     box-shadow: -5px 0 5px rgba(0, 0, 0.1);
     position: fixed;
-    z-index: 999;
+    z-index: 9999999;
 }
 .sidebar{
     position: fixed;
@@ -101,129 +121,199 @@ a:visited {
     width: 250px;
     backdrop-filter: blur(10px);
     z-index: 11;
-    background-color: rgba(201, 196, 207, 0.9);
-    box-shadow: -10px 0 10px rgb(129, 124, 124);
+    background-color: rgb(47, 158, 248);
+    box-shadow: -10px 0 10px rgb(35, 122, 194);
     display: none;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    color:black;
 }
 
 .sidebar li{
     width:100%;
-    color: black;
 }
 
 .sidebar a{
     width:100%;
-    color:black;
-    text-align: left;
 }
-
-.title{
-    display: block;
-    text-align: center;
-   
+.main-body{
+    background-color: white;
 }
 .title-image{
-    background-image: url('Device Picture.jpg');
+    background-image: url('using\ device.jpg');
     display: flex;
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* Keeps the background image fixed */
     position: relative;
-    height: 50vh;
-    margin-left: 10px;
-    margin-right: 10px;
+    height: 40vh;
+;
 }
 .intro-text{
     display:block;
     text-align: center;
-    background-color: #ffffff;
     margin-top: 0;
 }
-section{
-    position: relative;
-    width: 100%;
-    height: 20vh;
-    overflow:hidden;
+.title{
+    background-color: #f0f0f0;
+    padding-top: 80px;
+    padding-bottom: 20px;
 }
-section .wave{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height:100px;
-    background: url('wave.png');
-    background-size: 1000px 100px;
+.summary{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#using-device{
+    border-radius: 15px;
+    display: block;
+    margin:auto;
+    padding-bottom: 20px;
+}
+.summary2{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    background-color: #e6e6e6;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    gap: 50px;
+}
+#testing-picture{
+    padding-left: 5%;
+}
+.padder{
+    height: 7%;
+}
+.top-triangle{
+    width:0;
+    height: 0;
+    border-left: 100vw solid transparent;
+    border-bottom: 2vw solid #e1d5fa;
+}
+.bottom-triangle{
+    width:0;
+    height: 0;
+    border-right: 100vw solid transparent;
+    border-top: 2vw solid #e1d5fa;
+}
+.goal{
+    background-color: #e1d5fa;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.project-context{
+    display: flex;   
+}
+#piano-picture{
+    float: right;
+}
+#concept-sketch{
+    float:left;
+    padding-top: 30px;
+    padding-right: 20px;
+}
+.prototype-section{
+    background-color: #e1d5fa;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+#fbd-external{
+    display: block;
+    margin: auto;
+}
+#fbd-arm{
+    display: block;
+    margin: auto;
+}
+.free-body{
+    display: flex;
+    flex-wrap: wrap;
 }
 
-section .wave.wave1{
-    animation: animate 30s linear infinite;
-    z-index: 1000;
-    opacity: 1;
-    animation-delay: 0s;
-    bottom: 0;
+.matlab-graphs{
+    display: block;
+    margin: auto;
 }
-section .wave.wave2{
-    animation: animate2 15s linear infinite;
-    z-index: 999;
-    opacity: 0.5;
-    animation-delay: -5s;
-    bottom: 10px;
+.picture-format{
+    display: block;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;;
 }
-section .wave.wave3{
-    animation: animate 30s linear infinite;
-    z-index: 998;
-    opacity: 0.2;
-    animation-delay: -2s;
-    bottom: 15;
+.testing-top{
+    background-color:#e6e6e6;
 }
-section .wave.wave4{
-    animation: animate2 5s linear infinite;
-    z-index: 997;
-    opacity: 0.7;
-    animation-delay: -5s;
-    bottom: 20;
-}
-@keyframes animate
-{
-    0%
-    {
-        background-position-x: 0;
-    }
-    100%
-    {
-        background-position-x: 1000px;
-    }
-}
-@keyframes animate2
-{
-    0%
-    {
-        background-position-x: 0;
-    }
-    100%
-    {
-        background-position-x: -1000px;
-    }
-}
-@media (max-width: 1250px){
+@media (max-width: 1060px){
     .hideOnMobile{
         display: none;
     }
     .menu-button{
         display: block;
     }
+    #using-device{
+        max-width: 400px;
+    }
+    #testing-picture{
+        max-width: 400px;
+    }
 }
-@media (max-width: 400px){
+@media(max-width: 800px)
+{
+    .summary{
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    .summary2{
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    #using-device{
+        max-width: 320px;
+        display:block;
+        margin: auto;
+    }
+    #testing-picture{
+        max-width: 320px;
+        display:block;
+        margin: auto;
+    }
+    .picture-format{
+        width: 400px;
+    }
+    #fbd-external{
+        max-width: 320px;
+    }
+    #fbd-arm{
+        max-width: 320px;
+    }
+    .free-body{
+        display:block;
+    }
+    .matlab-graphs{
+        max-width: 320px;
+    }
+    .matlab-section{
+        display:block;
+    }
+
+}
+@media (max-width: 400px)
+{
     .sidebar{
         width: 100%;
+    } 
+    .picture-format{
+        width: 320px;
     }
 }
 
-@media (min-width: 1250px){
+@media (min-width: 1061px){
     .menu-button{
         display: none;
     }
